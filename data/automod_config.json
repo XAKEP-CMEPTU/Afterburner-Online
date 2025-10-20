@@ -1,0 +1,37 @@
+{
+  "enabled": true,
+  "owner_id": null,
+  "moderator_role_ids": [],
+  "mute_role_name": "✘ Душный ✘",
+  "embed_delete_after_seconds": 20,
+  "log_channel_id": null,
+  "filters": {
+    "bad_words": {"enabled": false},
+    "invite_link": {"enabled": true},
+    "caps": {"enabled": true, "min_letters": 8, "ratio": 0.7},
+    "spam": {"enabled": true, "window_seconds": 10, "max_messages": 6},
+    "mass_mentions": {"enabled": true, "max_mentions": 5, "max_role_mentions": 2, "block_everyone": true},
+    "emoji_spam": {"enabled": true, "max_emojis": 20, "max_unique": 15, "ratio_threshold": 0.5},
+    "zalgo": {"enabled": true, "threshold": 5},
+    "repeated_chars": {"enabled": true, "max_repeat": 6},
+    "url_blacklist": {"enabled": true},
+    "phrase_blacklist": {"enabled": true},
+    "attachment_blocklist": {"enabled": true, "extensions": ["exe", "scr", "bat", "cmd", "ps1", "jar", "apk"]},
+    "duplicate_messages": {"enabled": true, "window_seconds": 10, "max_duplicates": 2},
+    "long_message": {"enabled": true, "max_chars": 3500, "max_lines": 45}
+  },
+  "punishments": {
+    "invite_link": {"type": "timeout", "seconds": 3600},
+    "caps": {"type": "timeout", "seconds": 900},
+    "spam": {"type": "timeout", "seconds": 1200},
+    "mass_mentions": {"type": "timeout", "seconds": 1800},
+    "emoji_spam": {"type": "timeout", "seconds": 1200},
+    "zalgo": {"type": "timeout", "seconds": 900},
+    "repeated_chars": {"type": "timeout", "seconds": 900},
+    "url_blacklist": {"type": "timeout", "seconds": 3600},
+    "phrase_blacklist": {"type": "timeout", "seconds": 3600},
+    "attachment_blocklist": {"type": "timeout", "seconds": 3600},
+    "duplicate_messages": {"type": "timeout", "seconds": 1200},
+    "long_message": {"type": "timeout", "seconds": 900}
+  }
+}
